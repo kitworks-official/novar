@@ -6,7 +6,7 @@
 
   <p>
     <a href="https://novar-app.vercel.app"><b>Открыть Novar Web</b></a> •
-    <a href="https://lynx13371.github.io/novar"><b>Официальный сайт</b></a>
+    <a href="https://kitworks-official.github.io/novar"><b>Официальный сайт</b></a>
   </p>
 
   <p>
