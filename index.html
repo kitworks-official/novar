@@ -79,7 +79,13 @@
             color: var(--md-sys-color-primary);
         }
 
-        /* Material You Button */
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* Material You Buttons */
         .btn-primary {
             display: inline-flex;
             align-items: center;
@@ -96,6 +102,26 @@
 
         .btn-primary:hover {
             box-shadow: 0 4px 12px rgba(72, 202, 228, 0.3);
+            transform: translateY(-1px);
+        }
+
+        .btn-outline {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: transparent;
+            color: var(--md-sys-color-primary);
+            border: 1px solid var(--md-sys-color-primary);
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--md-shape-corner-full);
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s ease-in-out;
+            font-size: 0.95rem;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(72, 202, 228, 0.1);
             transform: translateY(-1px);
         }
 
@@ -143,6 +169,13 @@
             color: var(--md-sys-color-on-surface-variant);
             margin-bottom: 2.5rem;
             max-width: 700px;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         /* Features Grid */
@@ -226,6 +259,9 @@
             .main-logo {
                 max-width: 80%;
             }
+            header {
+                padding: 1rem;
+            }
         }
     </style>
 </head>
@@ -236,10 +272,16 @@
             <img src="./app_icon.png" alt="Novar Icon" class="app-icon">
             <span class="logo-text">Novar</span>
         </div>
-        <a href="https://novar-app.vercel.app" class="btn-primary" target="_blank">
-            <span>Открыть в веб</span>
-            <span class="material-symbols-outlined">arrow_forward</span>
-        </a>
+        <div class="header-actions">
+            <a href="https://github.com/kitworks-official/novar/releases" class="btn-outline" target="_blank">
+                <span class="material-symbols-outlined">download</span>
+                <span>Скачать APK</span>
+            </a>
+            <a href="https://novar-app.vercel.app" class="btn-primary" target="_blank">
+                <span>Открыть в веб</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
     </header>
 
     <main>
@@ -251,10 +293,16 @@
             <img src="./logo_name.png" alt="Novar Logo" class="main-logo">
             <h1>Твой личный круг общения, защищенный по умолчанию</h1>
             <p>Приватный, быстрый и независимый мессенджер нового поколения. Полная свобода слова без блокировок и цензуры.</p>
-            <a href="https://novar-app.vercel.app" class="btn-primary" target="_blank">
-                <span class="material-symbols-outlined">launch</span>
-                <span>Запустить Novar Web</span>
-            </a>
+            <div class="hero-actions">
+                <a href="https://novar-app.vercel.app" class="btn-primary" target="_blank">
+                    <span class="material-symbols-outlined">launch</span>
+                    <span>Запустить Novar Web</span>
+                </a>
+                <a href="https://github.com/kitworks-official/novar/releases" class="btn-outline" target="_blank">
+                    <span class="material-symbols-outlined">download</span>
+                    <span>Скачать APK</span>
+                </a>
+            </div>
         </section>
 
         <section class="features-grid">
